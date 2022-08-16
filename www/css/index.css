@@ -1,0 +1,253 @@
+* {
+  -webkit-tap-highlight-color: transparent; /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+#page-home {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --blue-solid: #350a4f;
+    --blue-transparent: rgba(53, 10, 79, .7);
+    --blue-transparent-alt: rgba(53, 10, 79, .5);
+    --blue-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--blue-light));
+    --gradient-color-alt: linear-gradient(to right, var(--blue-light), var(--yellow-solid));
+}
+
+html{
+  font-size:10px;
+}
+
+body{
+  font-family:an;
+  font-size:1.6rem;
+  color: var(--dark-color);
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+ul{
+  list-style:none;
+}
+
+section{
+  padding:5rem 0;
+}
+
+.container{
+  width:100%;
+  max-width:120rem;
+  padding: 10rem;
+  margin: 0 auto;
+  
+}
+
+.header{
+  /* background-image: url('images/banner_bg.jpg'); */
+  width:100%;
+  height:150px;
+  display:flex;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:999;
+}
+
+.header_item {
+  margin-bottom: 30px;
+}
+
+.header_item .header_img {
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.header_item .header_img img {
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.header_item .header_img .theme_btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  padding: 5px 25px;
+  max-width: 128px;
+  border-radius: 20px;
+  color:cadetblue;
+  background-color:azure;
+}
+
+
+
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.logo img{
+  max-width: 60%;
+  align-items:center;
+  position:relative;
+  padding:1rem;
+}
+
+
+
+
+.nav-list{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100vh;
+  background-color:var(--blue-solid);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index:1400;
+  transform:scale(0);
+  transition: opacity .5s;
+}
+
+.menu-open .nav-list{
+  opacity:1;
+  transform:scale(1);
+}
+
+.nav-item:not(:last-child){
+  margin-bottom:.5rem;
+}
+
+.nav-link{
+  display:block;
+  color:#fff;
+  font-size:3rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  padding:1rem;
+}
+
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change "none" to "text" */
+  font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  /* Padding to avoid the "unsafe" areas behind notches in the screen */
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+
+}
+
+.ui-page .ui-header,
+.ui-page .ui-footer .ui-navbar ul li a {
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-shadow: none;
+  background-color:var(--yellow-solid);
+  border-color: white;
+}
+
+.active {
+  background-color: #27251f !important;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#btn-delete {
+  color: white;
+  background-color: #00704a;
+  border: none;
+  text-shadow: none;
+}
+
+.list {
+  border: solid 1px #00704a;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 1px;
+  padding: 5px 15px;
+  margin: 10px 0px;
+}
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

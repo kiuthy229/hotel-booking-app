@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>RentalZ</title>
+</head>
+
+<body>
+    <!-- PAGE "HOME" -->
+    <div data-role="page" id="page-home">
+        <div class="container" style="padding:0px;">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="image/banner/banner-1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="image/banner_bg.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="image/banner/banner-2.jpg" style="width:100%">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+        </div>
+        
+        <div data-role="main" class="ui-content" data-position="fixed">
+            <section class="accomodation_area section_gap" style="padding-top: 0px;">
+                <div class="container" data-position="fixed" style="padding-top: 0px;">
+                    <div class="section_title text-center">
+                        <h2 class="title_color">Special Accomodation</h2>
+                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast,</p>
+                    </div>
+                    <div class="row mb_30">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="accomodation_item text-center">
+                                <div class="hotel_img">
+                                    <img src="image/room1.jpg" alt="">
+                                    <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Double Deluxe Room</h4></a>
+                                <h5>$250<small>/night</small></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="accomodation_item text-center">
+                                <div class="hotel_img">
+                                    <img src="image/room2.jpg" alt="">
+                                    <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Single Deluxe Room</h4></a>
+                                <h5>$200<small>/night</small></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="accomodation_item text-center">
+                                <div class="hotel_img">
+                                    <img src="image/room3.jpg" alt="">
+                                    <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Honeymoon Suit</h4></a>
+                                <h5>$750<small>/night</small></h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="accomodation_item text-center">
+                                <div class="hotel_img">
+                                    <img src="image/room4.jpg" alt="">
+                                    <a href="#" class="btn theme_btn button_hover">Book Now</a>
+                                </div>
+                                <a href="#"><h4 class="sec_h4">Economy Double</h4></a>
+                                <h5>$200<small>/night</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-state-persist active">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon">Create Accomodation</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon">Account List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- PAGE "CREATE" -->
+    <div data-role="page" id="page-create">
+        <div data-role="header" data-position="fixed"> 
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </nav>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <!-- Registration Form -->
+            <form id="frm-register">
+                <span id="error" style="color: red;"></span>
+                <div>
+                    Property Name: <input type='text' placeholder='Property Name' id='propertyname'>
+                </div>
+               
+                <div>
+                    Property Type:
+                    <select id="propertytype" required>
+                        <option value="0">Flat</option>
+                        <option value="1">House</option>
+                        <option value="2">Bungalow</option>
+                    </select>
+                </div>
+                
+                <div>
+                    Property Address: 
+                    <select id="city"></select>
+                    <select id="district"></select>
+                    <select id="ward"></select>
+                </div>
+
+                <div>
+                    Bedroom:
+                    <select id="bedroom" required>
+                        <option value="0">Studio</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                    </select>
+                </div>
+                <div>
+                    Date: <input type='text' placeholder='Date' id='date' required>
+                </div>
+                <div>
+                    Price per month: <input type='number' placeholder='Price Per Month' id='price' required>             
+                </div>
+                <div>
+                    Furniture Type:
+                    <select id='furnituretype' name="furni">
+                        <option value="0">Furnished</option>
+                        <option value="1">Unfurnished</option>
+                        <option value="2">Part furnished</option>
+                    </select>
+                </div>
+                <div>
+                    Notes: <input type='text' placeholder='Notes' id='notes'>
+                </div>
+                <div>
+                    Reporter: <input type='text' placeholder='Name of the reporter' id='reporter' required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- Confirm Registration -->
+            <form data-role="popup" id="frm-confirm" class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="id">Porperty Name</label>
+                    <input type="text" id="propertyname" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Property Type</label>
+                    <input type="text" id="propertytype" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">City</label>
+                    <input type="text" id="city" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">District</label>
+                    <input type="text" id="district" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Ward</label>
+                    <input type="text" id="ward" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Bedroom</label>
+                    <input type="text" id="bedroom" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Date</label>
+                    <input type="text" id="date" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Price per month</label>
+                    <input type="number" id="price" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Furniture Type</label>
+                    <input type="text" id="furnituretype" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Notes</label>
+                    <input type="text" id="notes" readonly>
+                </div>
+
+                <div class="ui-field-contain">
+                    <label for="id">Reporter</label>
+                    <input type="text" id="reporter" readonly>
+                </div>
+
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a class="ui-btn ui-corner-all" data-rel="back">Cancel</a>
+                    </div>
+
+                    <div class="ui-block-b">
+                        <a class='ui-btn ui-btn-b' id='btn-create'>Confirm</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon ui-state-persist active">Create
+                            Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon">Account List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE "ACCOUNT LIST" -->
+    <div data-role="page" id="page-list">
+        <div data-role="header" data-position="fixed"> 
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </nav>
+        </div>
+
+        <div data-role="main">
+            <!--Display Account List-->
+            <ul id="list-accommodation" data-role="listview" class="ui-nodisc-icon ui-alt-icon"></ul>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon">Create Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon ui-state-persist active">Account
+                            List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE "ACCOUNT DETAILS" -->
+    <div data-role="page" id="page-detail">
+        <div data-role="header" data-position="fixed"> 
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </nav>
+        </div>
+
+        <div data-role="main" class="ui-content" >
+            <!-- DISPLAY DETAILS -->
+            <img src="img/boyscout_logo.jpg" width="100%"><br><br>
+
+
+            <ul class="blog_meta list_style">
+                <li> 
+                    <label for="id">
+                            <a class="lnr lnr-eye"> <a>ID</a></a>
+                            <input id="id" readonly>
+                    </label>
+                </li>
+                <li> 
+                    <label for="id">
+                            <a class="lnr lnr-flag"> <a>Property Name</a></a>
+                            <input id="propertyname" readonly>
+                    </label>
+                </li>
+                <li> 
+                    <label for="id">
+                            <a class="lnr lnr-apartment"> <a>Property Type</a></a>
+                            <input id="propertytype" readonly>
+                    </label>
+                </li>             
+                <li> 
+                    <label for="id">
+                            <a class="lnr lnr-home"> <a>Bedroom</a></a>
+                            <input id="bedroom" readonly>
+                    </label>
+                </li>
+                <label for="id">
+                    <a>Furniture</a>
+                    <input id="furnituretype" readonly>
+                </label>
+                <label for="id">
+                    <a>Date</a>
+                    <input id="date" readonly>
+                </label>
+            </ul>
+
+            <ul class="blog_meta list_style">
+                <li>
+                    <label for="id">
+                        <a>Address</a>
+                        <input id="ward" readonly>
+                    </label>
+                </li>
+                <li>
+                    <label for="id">
+                        <input id="district" readonly>
+                    </label>
+                </li>
+                <label for="id">
+                    <input id="city" readonly>
+                </label>
+            </ul>
+                
+            
+            <br>
+
+            <!-- BUTTONS "UPDATE" & "DELETE" -->
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="padding-right: 5px;">
+                    <a href="#frm-update" data-rel="popup" data-position-to="window" data-transition="pop" 
+                    class="ui-btn ui-corner-all">Update</a>
+                    
+                </div>
+
+                <div class="ui-block-b" style="padding-left: 5px;">
+                    <a href="#frm-delete" data-rel="popup" data-position-to="window" data-transition="pop"
+                        class="ui-btn ui-corner-all ui-btn-b">Delete</a>
+                </div>
+            </div>
+
+            <form data-role="popup" id="frm-update">
+                <div data-role="header">
+                    <h1 style="padding-top: 20px;">Update</h1>
+                </div>
+
+                <div role="main" class="ui-content">
+                    <div class="ui-field-contain">
+                        <label for="id">Property Name</label>
+                        <input type="text" id="propertyname">
+                    </div>
+    
+                    <div>
+                        <label for="id">Property Type</label>
+                        <select id="propertytype" onchange="updatePropertyType()" required>
+                            <option value="0">Flat</option>
+                            <option value="1">House</option>
+                            <option value="2">Bungalow</option>
+                        </select>
+                    </div>
+                
+                    <div>
+                        <label for="id">Property Address</label>
+                        <select id="city"></select>
+                        <select id="district"></select>
+                        <select id="ward"></select>
+                    </div>
+
+                    <div>
+                        <label for="id">Porperty Bedroom</label>
+                        <select id="bedroom" required>
+                            <option value="0">Studio</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                        </select>
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="id">Date</label>
+                        <input type="text" id="date">
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="id">Price per month</label>
+                        <input type="text" id="price">
+                    </div>
+    
+                    <div>
+                        <label for="id">Furniture</label>
+                        <select id="furnituretype" required>
+                            <option value="0">Furnished</option>
+                            <option value="1">Unfurnished</option>
+                            <option value="2">Part-furnished</option>
+                        </select>
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="id">Notes</label>
+                        <input type="text" id="notes">
+                    </div>
+    
+                    <div class="ui-field-contain">
+                        <label for="id">Reporter</label>
+                        <input type="text" id="reporter">
+                    </div>
+
+                    <div style="text-align: right;">
+                        <a class="ui-btn ui-corner-all ui-btn-inline" data-rel="back">Cancel</a>
+                        <button type="submit" class="ui-btn ui-corner-all ui-btn-inline"
+                            id="btn-update">Update</button>
+                    </div>
+                </div>
+            </form>
+
+            <form data-role="popup" id="frm-delete">
+                <div data-role="header">
+                    <h1 style="padding-top: 20px;">Delete?</h1>
+                </div>
+
+                <div role="main" class="ui-content">
+                    <h3>Are you sure you want to delete this rental?</h3>
+                    <p>This action cannot be undone.</p>
+                    <br>
+
+                    <p><em>Please type "<strong>confirm delete</strong>" to delete this rental.</em></p>
+                    <input type="text" id="txt-delete">
+
+                    <div style="text-align: right;">
+                        <a class="ui-btn ui-corner-all ui-btn-inline" data-rel="back">Cancel</a>
+                        <button type="submit" class="ui-btn ui-corner-all ui-btn-inline ui-disabled"
+                            id="btn-delete">Delete</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- COMMENT AREA -->
+            <form id="frm-comment" style="margin-top: 25px;">
+                <textarea id="txt-comment" placeholder="Please enter your comment here..."></textarea>
+                <div style="text-align: right;">
+                    <button type="submit" class="ui-btn ui-btn-inline ui-corner-all ui-btn-b">Comment</button>
+                </div>
+
+                <div id="list-comment"></div>
+            </form>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon">Create Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon ui-state-persist active">Account
+                            List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE "SEARCH" -->
+    <div data-role="page" id="page-search">
+        <div data-role="header" data-position="fixed"> 
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </nav>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <div class="container">
+                <form id="frm-search">
+                    <input type="text" placeholder="Property Name" id="propertyname">
+                    <input type="number" placeholder="Price" id="price">
+    
+                    <button type="submit">Search</button>
+                </form>
+            </div>   
+            <ul id="list-accomm" data-role="listview" class="ui-nodisc-icon ui-alt-icon"></ul>
+        </div>
+
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon ui-state-persist">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon">Create Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon">Account List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon active">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE "ABOUT" -->
+    <div data-role="page" id="page-about">
+        <div data-role="header" data-position="fixed"> 
+                <nav class="nav">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </nav>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <section class="facilities_area section_gap">
+                
+                <div class="container">
+                    <div class="section_title text-center">
+                        <h2 class="title_w">Royal Facilities</h2>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                    </div>
+                    <div class="row mb_30">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-dinner"></i>Restaurant</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-bicycle"></i>Sports CLub</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-shirt"></i>Swimming Pool</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-car"></i>Rent a Car</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-construction"></i>Gymnesium</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="facilities_item">
+                                <h4 class="sec_h4"><i class="lnr lnr-coffee-cup"></i>Bar</h4>
+                                <p>Usage of the Internet is becoming more common due to rapid advancement of technology and power.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#page-home" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-notext ui-nodisc-icon">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-create" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-plus ui-btn-icon-notext ui-nodisc-icon">Create Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-list" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-grid ui-btn-icon-notext ui-nodisc-icon">Account List</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-search" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-search ui-btn-icon-notext ui-nodisc-icon">Search</a>
+                    </li>
+
+                    <li>
+                        <a href="#page-about" data-transition="none"
+                            class="ui-btn ui-btn-b ui-icon-info ui-btn-icon-notext ui-nodisc-icon ui-state-persist active">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src='cordova.js'></script>
+    <script src='js/jquery.js'></script>
+    <script src='js/jquery.mobile-1.4.5.min.js'></script>
+    <script src='js/index.js'></script>
+    <script src='js/address.js'></script>
+    
+</body>
+
+</html>
